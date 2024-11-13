@@ -14,16 +14,15 @@
     padding: 2rem;
 }
 
-.texto-branco{
+.texto-branco {
     text-align: justify;
-    text-justify: inter-word;
     color: #fff;
     font-family: 'Jaapokki Subtract';
     font-size: 100px;
-    font-weight: 200;
+    font-weight: 400;
 }
 
-.titulo-branco{
+.titulo-branco {
     color: #fff;
     font-family: 'Jaapokki Subtract';
     font-weight: bolder;
@@ -31,11 +30,11 @@
     letter-spacing: 2px;
 }
 
-h2.titulo-branco{
-    font-size: 125px ;
+h2.titulo-branco {
+    font-size: 125px;
 }
 
-.titulo-castanho{
+.titulo-castanho {
     color: #A85100;
     font-family: 'Jaapokki Subtract';
     font-weight: bolder;
@@ -43,25 +42,23 @@ h2.titulo-branco{
     letter-spacing: 2px;
 }
 
-h2.titulo-castanho{
-    font-size: 125px ;
+h2.titulo-castanho {
+    font-size: 125px;
 }
 
-h3.titulo-castanho{
-    font-size: 110px ;
+h3.titulo-castanho {
+    font-size: 110px;
 }
 
-
-.texto-castanho{
+.texto-castanho {
     text-align: justify;
-    text-justify: inter-word;
     color: #A85100;
     font-family: 'Jaapokki Subtract';
     font-size: 100px;
     font-weight: 400;
 }
 
-.titulo-verde{
+.titulo-verde {
     color: #3E5F04;
     font-family: 'Jaapokki Subtract';
     font-weight: bolder;
@@ -69,25 +66,23 @@ h3.titulo-castanho{
     letter-spacing: 2px;
 }
 
-h2.titulo-verde{
-    font-size: 125px ;
+h2.titulo-verde {
+    font-size: 125px;
 }
 
-h3.titulo-verde{
-    font-size: 110px ;
+h3.titulo-verde {
+    font-size: 110px;
 }
 
-
-.texto-verde{
+.texto-verde {
     text-align: justify;
-    text-justify: inter-word;
     color: #3E5F04;
     font-family: 'Jaapokki Subtract';
     font-size: 100px;
     font-weight: 400;
 }
 
-.titulo-amarelo{
+.titulo-amarelo {
     color: #D1B201;
     font-family: 'Jaapokki Subtract';
     font-weight: bolder;
@@ -95,25 +90,23 @@ h3.titulo-verde{
     letter-spacing: 2px;
 }
 
-h2.titulo-amarelo{
-    font-size: 125px ;
+h2.titulo-amarelo {
+    font-size: 125px;
 }
 
-h3.titulo-amarelo{
-    font-size: 110px ;
+h3.titulo-amarelo {
+    font-size: 110px;
 }
 
-
-.texto-amarelo{
+.texto-amarelo {
     text-align: justify;
-    text-justify: inter-word;
     color: #D1B201;
     font-family: 'Jaapokki Subtract';
     font-size: 100px;
     font-weight: 400;
 }
 
-.titulo-azul{
+.titulo-azul {
     color: #055B61;
     font-family: 'Jaapokki Subtract';
     font-weight: bolder;
@@ -121,51 +114,75 @@ h3.titulo-amarelo{
     letter-spacing: 2px;
 }
 
-h2.titulo-azul{
-    font-size: 125px ;
+h2.titulo-azul {
+    font-size: 125px;
 }
 
-h3.titulo-azul{
-    font-size: 110px ;
+h3.titulo-azul {
+    font-size: 110px;
 }
 
-
-.texto-azul{
+.texto-azul {
     text-align: justify;
-    text-justify: inter-word;
     color: #055B61;
     font-family: 'Jaapokki Subtract';
     font-size: 100px;
     font-weight: 400;
 }
 
-.fundo-branco{
+.fundo-branco {
     background-color: #fff;
     padding: 2rem;
 }
 
-.fundo-branco.botao{
+.fundo-branco.botao {
     height: 100vh;
-    display:flex;
-    align-items:center;
-    justify-content:center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
 }
 
-.pontos-botao{
+.pontos-botao {
     background-color: #FF8418;
     color: #FFFFFF;
     border-radius: 15px;
     border: none;
-    box-shadow: 0 0 5px rgb(0, 0, 0, 0.3);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
     margin-top: 2rem;
-    padding: 5px;
-    padding-right: 10px;
-    padding-left: 10px;
+    padding: 5px 10px;
     font-size: 1.5em;
     font-family: 'Jaapokki Subtract';
+    transition: transform 0.3s ease;
 }
-.pontos-botao:hover{
+
+.pontos-botao:hover {
     transform: scale(1.05);
     cursor: pointer;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    /* Adjust text sizes on smaller screens */
+    .texto-branco, .texto-castanho, .texto-verde, .texto-amarelo, .texto-azul {
+        font-size: 50px;
+    }
+
+    .titulo-branco, .titulo-castanho, .titulo-verde, .titulo-amarelo, .titulo-azul {
+        font-size: 75px;
+    }
+
+    /* Adjust button size for mobile */
+    .pontos-botao {
+        font-size: 1.2em;
+        padding: 10px;
+    }
+
+    h2.titulo-branco, h2.titulo-castanho, h2.titulo-verde, h2.titulo-amarelo, h2.titulo-azul {
+        font-size: 100px;
+    }
+
+    h3.titulo-branco, h3.titulo-castanho, h3.titulo-verde, h3.titulo-amarelo, h3.titulo-azul {
+        font-size: 90px;
+    }
 }
