@@ -9,12 +9,13 @@
 </head>
 <body>
 
-    <div class="banner">
+    <!-- Apply fundo-colorido class to this section -->
+    <div class="banner fundo-colorido">
         <img src="banner.jpg" alt="Descrição do Banner">
     </div>
 
-
-    <nav>
+    <!-- Add fundo-colorido to the navigation -->
+    <nav class="fundo-colorido">
         <a href="#about">About</a>
         <a href="#schedule">Schedule</a>
         <a href="#team">The Team</a>
@@ -24,47 +25,12 @@
     </nav>
 
     <section id="sobre">
-        <h2>About</h2>
-        <p class="justificado">Semana da Bioengenharia/Bioengineering Week, at Instituto Superior Técnico, was initially created in 2014 as an initiative from students of the many degrees provided by the Bioengineering Department. Now, the X edition of this event, organized by students of various fields, brings a collection of activities, prizes, and more...</p>
+        <h2 class="titulo-branco">About</h2>
+        <p class="texto-branco">Semana da Bioengenharia/Bioengineering Week, at Instituto Superior Técnico, was initially created in 2014...</p>
     </section>
 
-    <!-- Team Section -->
-    <section id="team">
-        <h2>Team</h2>
-        <div class="team-section">
-            <div class="team-member" onclick="redirectToPage('teampage.html')">
-                <img src="team_member1.jpg" alt="General Coordination">
-                <h3>General Coordination</h3>
-            </div>
-            <div class="team-member" onclick="redirectToPage('teampage.html')">
-                <img src="team_member2.jpg" alt="Communications">
-                <h3>Communications</h3>
-            </div>
-            <div class="team-member" onclick="redirectToPage('teampage.html')">
-                <img src="team_member3.jpg" alt="Design">
-                <h3>Design</h3>
-            </div>
-            <div class="team-member" onclick="redirectToPage('teampage.html')">
-                <img src="team_member4.jpg" alt="Scientific">
-                <h3>Scientific</h3>
-            </div>
-            <div class="team-member" onclick="redirectToPage('teampage.html')">
-                <img src="team_member5.jpg" alt="External Relations">
-                <h3>External Relations</h3>
-            </div>
-            <div class="team-member" onclick="redirectToPage('teampage.html')">
-                <img src="team_member6.jpg" alt="Logistics">
-                <h3>Logistics</h3>
-            </div>
-            <div class="team-member" onclick="redirectToPage('teampage.html')">
-                <img src="team_member7.jpg" alt="Informatics">
-                <h3>Informatics</h3>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; X SBE - Semana da Bioengenharia</p>
+    <footer class="fundo-colorido">
+        <p class="texto-branco">© X SBE - Semana da Bioengenharia</p>
     </footer>
 
     <script>
@@ -88,3 +54,4 @@
     </script>
 </body>
 </html>
+
