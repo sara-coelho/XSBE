@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X SBE Teams</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+       body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+/* Define a estrutura dos departamentos, empilhados verticalmente */
+.department {
+    margin-bottom: 40px;
+    background: linear-gradient(90deg, #FFC82C, #ADB40E, #FFBD28, #FF9114, #A5B80F);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Garante que o departamento ocupe toda a largura */
+    display: block; /* Garante que eles fiquem empilhados verticalmente */
+}
+
+h2 {
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Rolagem horizontal para os membros da equipe */
+.team-carousel {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto; /* Faz as imagens dos membros deslizarem horizontalmente */
+    padding-bottom: 10px;
+    scrollbar-width: none; /* Remove a barra de rolagem no Firefox */
+}
+
+/* Remove a barra de rolagem no Chrome */
+.team-carousel::-webkit-scrollbar {
+    display: none;
+}
+
+/* Estilo de cada membro da equipe */
+.team-member {
+    flex: 0 0 200px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    width: 200px; /* Largura fixa dos membros */
+    height: 300px; /* Altura fixa */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Estilo das imagens dos membros */
+.team-member img {
+    width: 100%;
+    height: 180px; /* Altura fixa das imagens */
+    object-fit: cover; /* Mantém a proporção da imagem sem distorcer */
+    border-radius: 10px;
+}
+
+.team-member h3 {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Responsividade */
+@media (min-width: 768px) {
+    .team-carousel {
+        gap: 20px;
+    }
+}
+
+/* Estilo de links */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* Estilo do link */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+    </style>
+</head>
+<body>
+    <div class="department">
+        <h1>General Coordination</h1>
+        <div class="team-carousel">
+
+        <!-- Team member 1 -->
+            <div class="team-member">
+                <a href="department1.html">
+                    <img src="team_member1.jpg" alt="Team Member 1">
+                    <div class="overlay">
+                        <h3>Member Name 1</h3>
+                        <p>Degree 1</p>
+                    </div>
+                </a>
+            </div>
+    
+        <!-- Team member 2 -->
+            <div class="team-member">
+                <a href="department2.html">
+                    <img src="team_member2.jpg" alt="Team Member 2">
+                    <div class="overlay">
+                        <h3>Member Name 2</h3>
+                        <p>Degree 2</p>
+                    </div>
+                </a>
+            </div>
+    
+        <!-- Team member 3 -->
+            <div class="team-member">
+                <a href="department3.html">
+                    <img src="team_member3.jpg" alt="Team Member 3">
+                    <div class="overlay">
+                        <h3>Member Name 3</h3>
+                        <p>Degree 3</p>
+                    </div>
+                </a>
+            </div>
+    <div class="department">
+        <h1>Communications</h1>
+        <div class="team-carousel">
+
+        <!-- Team member 1 -->
+            <div class="team-member">
+                <a href="department1.html">
+                    <img src="team_member1.jpg" alt="Team Member 1">
+                    <div class="overlay">
+                        <h3>Member Name 1</h3>
+                        <p>Degree 1</p>
+                    </div>
+                </a>
+            </div>
+    
+        <!-- Team member 2 -->
+            <div class="team-member">
+                <a href="department2.html">
+                    <img src="team_member2.jpg" alt="Team Member 2">
+                    <div class="overlay">
+                        <h3>Member Name 2</h3>
+                        <p>Degree 2</p>
+                    </div>
+                </a>
+            </div>
+    
+        <!-- Team member 3 -->
+            <div class="team-member">
+                <a href="department3.html">
+                    <img src="team_member3.jpg" alt="Team Member 3">
+                    <div class="overlay">
+                        <h3>Member Name 3</h3>
+                        <p>Degree 3</p>
+                    </div>
+                </a>
+            </div>
+    <div class="department">
+        <h1>Design</h1>
+        <div class="team-carousel">
+
+        <!-- Team member 1 -->
+            <div class="team-member">
+                <a href="department1.html">
+                    <img src="team_member1.jpg" alt="Team Member 1">
+                    <div class="overlay">
+                        <h3>Member Name 1</h3>
+                        <p>Degree 1</p>
+                    </div>
+                </a>
+            </div>
+    
+        <!-- Team member 2 -->
+            <div class="team-member">
+                <a href="department2.html">
+                    <img src="team_member2.jpg" alt="Team Member 2">
+                    <div class="overlay">
+                        <h3>Member Name 2</h3>
+                        <p>Degree 2</p>
+                    </div>
+                </a>
+            </div>
+    
+        <!-- Team member 3 -->
+            <div class="team-member">
+                <a href="department3.html">
+                    <img src="team_member3.jpg" alt="Team Member 3">
+                    <div class="overlay">
+                        <h3>Member Name 3</h3>
+                        <p>Degree 3</p>
+                    </div>
+                </a>
+            </div>
+    <div class="department">
+        <h1>Scientific</h1>
+        <div class="team-carousel">
+
+        <!-- Team member 1 -->
+            <div class="team-member">
+                <a href="department1.html">
+                    <img src="team_member1.jpg" alt="Team Member 1">
+                    <div class="overlay">
+                        <h3>Member Name 1</h3>
+                        <p>Degree 1</p>
+                    </div>
+                </a>
+            </div>
+    
+        <!-- Team member 2 -->
+            <div class="team-member">
+                <a href="department2.html">
+                    <img src="team_member2.jpg" alt="Team Member 2">
+                    <div class="overlay">
+                        <h3>Member Name 2</h3>
+                        <p>Degree 2</p>
+                    </div>
+                </a>
+            </div>
+    
+        <!-- Team member 3 -->
+            <div class="team-member">
+                <a href="department3.html">
+                    <img src="team_member3.jpg" alt="Team Member 3">
+                    <div class="overlay">
+                        <h3>Member Name 3</h3>
+                        <p>Degree 3</p>
+                    </div>
+                </a>
+            </div>
+    <div class="department">
+        <h1>External Relations</h1>
+        <div class="team-carousel">
+
+        <!-- Team member 1 -->
+            <div class="team-member">
+                <a href="department1.html">
+                    <img src="team_member1.jpg" alt="Team Member 1">
+                    <div class="overlay">
+                        <h3>Member Name 1</h3>
+                        <p>Degree 1</p>
+                    </div>
+                </a>
+            </div>
+    
+        <!-- Team member 2 -->
+            <div class="team-member">
+                <a href="department2.html">
+                    <img src="team_member2.jpg" alt="Team Member 2">
+                    <div class="overlay">
+                        <h3>Member Name 2</h3>
+                        <p>Degree 2</p>
+                    </div>
+                </a>
+            </div>
+    
+        <!-- Team member 3 -->
+            <div class="team-member">
+                <a href="department3.html">
+                    <img src="team_member3.jpg" alt="Team Member 3">
+                    <div class="overlay">
+                        <h3>Member Name 3</h3>
+                        <p>Degree 3</p>
+                    </div>
+                </a>
+            </div>
+    <div class="department">
+        <h1>Logistics</h1>
+        <div class="team-carousel">
+
+        <!-- Team member 1 -->
+            <div class="team-member">
+                <a href="department1.html">
+                    <img src="team_member1.jpg" alt="Team Member 1">
+                    <div class="overlay">
+                        <h3>Member Name 1</h3>
+                        <p>Degree 1</p>
+                    </div>
+                </a>
+            </div>
+    
+        <!-- Team member 2 -->
+            <div class="team-member">
+                <a href="department2.html">
+                    <img src="team_member2.jpg" alt="Team Member 2">
+                    <div class="overlay">
+                        <h3>Member Name 2</h3>
+                        <p>Degree 2</p>
+                    </div>
+                </a>
+            </div>
+    
+        <!-- Team member 3 -->
+            <div class="team-member">
+                <a href="department3.html">
+                    <img src="team_member3.jpg" alt="Team Member 3">
+                    <div class="overlay">
+                        <h3>Member Name 3</h3>
+                        <p>Degree 3</p>
+                    </div>
+                </a>
+            </div>
+
+    <div class="department">
+        <h1>Informatics</h1>
+        <div class="team-carousel">
+
+        <!-- Team member 1 -->
+            <div class="team-member">
+                <a href="department1.html">
+                    <img src="team_member1.jpg" alt="Team Member 1">
+                    <div class="overlay">
+                        <h3>Member Name 1</h3>
+                        <p>Degree 1</p>
+                    </div>
+                </a>
+            </div>
+    
+        <!-- Team member 2 -->
+            <div class="team-member">
+                <a href="department2.html">
+                    <img src="team_member2.jpg" alt="Team Member 2">
+                    <div class="overlay">
+                        <h3>Member Name 2</h3>
+                        <p>Degree 2</p>
+                    </div>
+                </a>
+            </div>
+    
+        <!-- Team member 3 -->
+            <div class="team-member">
+                <a href="department3.html">
+                    <img src="team_member3.jpg" alt="Team Member 3">
+                    <div class="overlay">
+                        <h3>Member Name 3</h3>
+                        <p>Degree 3</p>
+                    </div>
+                </a>
+            </div>
+    <footer>
+        <p>&copy; X SBE - Semana da Bioengenharia</p>
+    </footer>
+
+</body>
+</html>

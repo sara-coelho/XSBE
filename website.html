@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X SBE - Semana da Bioengenharia</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+        }
+        nav a {
+            color: white;
+            padding: 15px;
+            text-decoration: none;
+        }
+        section {
+            padding: 20px;
+        }
+        .countdown {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        .countdown div {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .banner {
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .banner img {
+            width: 100%;
+            height: auto;
+        }
+
+        .imagem-container {
+            position: relative; 
+            display: inline-block; 
+            border-radius: 8px; 
+            overflow: hidden; 
+        }
+
+        .imagem-container::before {
+            content: ''; 
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border-radius: 8px; 
+            background: linear-gradient(90deg, #FFC82C, #ADB40E,#FFBD28, #FF9114, #A5B80F); 
+            z-index: -1; 
+            padding: 5px; 
+        }
+
+        .imagem {
+            display: block; 
+            max-width: 100%; 
+            height: auto; 
+            border-radius: 8px; 
+        }
+        
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .justificado {
+            text-align: justify;
+            margin: 20px 0;
+        }
+
+        .team-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .team-member {
+            flex: 1 0 21%;
+            margin: 15px;
+            position: relative; /* Needed for hover effect */
+            border-radius: 8px;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .team-member img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .team-member h3 {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 1.5em;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            text-align: center;
+        }
+
+        /* Hover effect: Show header on hover */
+        .team-member:hover h3 {
+            opacity: 1;
+        }
+
+        /* Page-specific styles for footer, navigation, etc. */
+        footer{
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        @media screen and (max-width: 768px) {
+            .team-member {
+                flex: 1 0 45%; /* Adjusts layout for smaller screens */
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .team-member {
+                flex: 1 0 90%; /* Single column layout for very small screens */
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="banner">
+        <img src="banner.jpg" alt="Descrição do Banner">
+    </div>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#team">The Team</a>
+        <a href="#giveaways">Giveaways</a>
+        <a href="sponsors">Sponsors</a>
+        <a href="supporters">Supporters</a>
+    </nav>
+
+    <section id="sobre">
+        <h2>About</h2>
+        <p class="justificado">Semana da Bioengenharia/Bioengineering Week, at Instituto Superior Técnico, was initially created in 2014 as an initiative from students of the many degrees provided by the Bioengineering Department. Now, the X edition of this event, organized by students of various fields, brings a collection of activities, prizes, and more...</p>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team">
+        <h2>Team</h2>
+        <div class="team-section">
+            <div class="team-member" onclick="redirectToPage('teampage.html')">
+                <img src="team_member1.jpg" alt="General Coordination">
+                <h3>General Coordination</h3>
+            </div>
+            <div class="team-member" onclick="redirectToPage('teampage.html')">
+                <img src="team_member2.jpg" alt="Communications">
+                <h3>Communications</h3>
+            </div>
+            <div class="team-member" onclick="redirectToPage('teampage.html')">
+                <img src="team_member3.jpg" alt="Design">
+                <h3>Design</h3>
+            </div>
+            <div class="team-member" onclick="redirectToPage('teampage.html')">
+                <img src="team_member4.jpg" alt="Scientific">
+                <h3>Scientific</h3>
+            </div>
+            <div class="team-member" onclick="redirectToPage('teampage.html')">
+                <img src="team_member5.jpg" alt="External Relations">
+                <h3>External Relations</h3>
+            </div>
+            <div class="team-member" onclick="redirectToPage('teampage.html')">
+                <img src="team_member6.jpg" alt="Logistics">
+                <h3>Logistics</h3>
+            </div>
+            <div class="team-member" onclick="redirectToPage('teampage.html')">
+                <img src="team_member7.jpg" alt="Informatics">
+                <h3>Informatics</h3>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <p>&copy; X SBE - Semana da Bioengenharia</p>
+    </footer>
+
+    <script>
+        function updateCountdown() {
+            const eventDate = new Date("February 5, 2025 09:00:00").getTime();
+            const now = new Date().getTime();
+            const timeLeft = eventDate - now;
+
+            const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+            document.getElementById("days").textContent = days;
+            document.getElementById("hours").textContent = hours;
+            document.getElementById("minutes").textContent = minutes;
+            document.getElementById("seconds").textContent = seconds;
+        }
+
+        setInterval(updateCountdown, 1000);
+    </script>
+</body>
+</html>

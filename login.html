@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center; /* Centraliza horizontalmente */
+            align-items: center; /* Centraliza verticalmente */
+            height: 100vh; /* Altura total da tela */
+            background-color: #f4f4f4; /* Cor de fundo */
+        }
+
+        .container {
+            background-color: white; /* Cor de fundo do formulário */
+            padding: 20px;
+            border-radius: 8px; /* Arredonda os cantos */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+            width: 300px; /* Largura do formulário */
+        }
+
+        h1 {
+            text-align: center; /* Centraliza o título */
+            color: #007BFF; /* Cor do título */
+        }
+
+        input {
+            width: 100%; /* Largura total do campo */
+            padding: 10px; /* Espaçamento interno */
+            margin: 10px 0; /* Espaçamento acima e abaixo */
+            border: 1px solid #ccc; /* Borda padrão */
+            border-radius: 5px; /* Arredonda os cantos */
+        }
+
+        .botao {
+            background-color: #007BFF; /* Cor de fundo do botão */
+            color: white; /* Cor do texto */
+            padding: 10px; /* Espaçamento interno */
+            border: none; /* Remove bordas padrão */
+            border-radius: 5px; /* Arredonda os cantos */
+            cursor: pointer; /* Muda o cursor ao passar por cima */
+            font-size: 16px; /* Tamanho da fonte */
+            width: 100%; /* Largura total do botão */
+        }
+
+        .botao:hover {
+            background-color: #0056b3; /* Cor do botão ao passar o mouse */
+        }
+
+        .links {
+            margin-top: 10px; /* Espaçamento acima dos links */
+            text-align: center; /* Centraliza os links */
+        }
+
+        .links a {
+            color: #007BFF; /* Cor dos links */
+            text-decoration: none; /* Remove sublinhado */
+            display: block; /* Cada link ocupa uma linha */
+            margin: 5px 0; /* Espaçamento entre os links */
+        }
+
+        .links a:hover {
+            text-decoration: underline; /* Sublinha o link ao passar o mouse */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Login</h1>
+        <form action="pagina_de_destino.html" method="POST"> <!-- Altera para a página de destino desejada -->
+            <input type="text" placeholder="Nome de Usuário" required>
+            <input type="password" placeholder="Senha" required>
+            <button type="submit" class="botao">Entrar</button>
+        </form>
+        
+        <div class="links">
+            <a href="esqueci_senha.html">Esqueci minha senha</a> <!-- Altera para a página de reset de senha -->
+            <a href="criar_conta.html">Criar conta</a> <!-- Altera para a página de criação de conta -->
+        </div>
+    </div>
+
+</body>
+</html>
