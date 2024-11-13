@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X SBE - Semana da Bioengenharia</title>
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="assets/css/style_geral.css">
+</head>
+<body>
+
+    <div class="banner">
+        <img src="banner.jpg" alt="Descrição do Banner">
+    </div>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#team">The Team</a>
+        <a href="#giveaways">Giveaways</a>
+        <a href="sponsors">Sponsors</a>
+        <a href="supporters">Supporters</a>
+    </nav>
+
+    <section id="sobre">
+        <h2>About</h2>
+        <p class="justificado">Semana da Bioengenharia/Bioengineering Week, at Instituto Superior Técnico, was initially created in 2014 as an initiative from students of the many degrees provided by the Bioengineering Department. Now, the X edition of this event, organized by students of various fields, brings a collection of activities, prizes, and more...</p>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team">
+        <h2>Team</h2>
+        <div class="team-section">
+            <div class="team-member" onclick="redirectToPage('teampage.html')">
+                <img src="team_member1.jpg" alt="General Coordination">
+                <h3>General Coordination</h3>
+            </div>
+            <div class="team-member" onclick="redirectToPage('teampage.html')">
+                <img src="team_member2.jpg" alt="Communications">
+                <h3>Communications</h3>
+            </div>
+            <div class="team-member" onclick="redirectToPage('teampage.html')">
+                <img src="team_member3.jpg" alt="Design">
+                <h3>Design</h3>
+            </div>
+            <div class="team-member" onclick="redirectToPage('teampage.html')">
+                <img src="team_member4.jpg" alt="Scientific">
+                <h3>Scientific</h3>
+            </div>
+            <div class="team-member" onclick="redirectToPage('teampage.html')">
+                <img src="team_member5.jpg" alt="External Relations">
+                <h3>External Relations</h3>
+            </div>
+            <div class="team-member" onclick="redirectToPage('teampage.html')">
+                <img src="team_member6.jpg" alt="Logistics">
+                <h3>Logistics</h3>
+            </div>
+            <div class="team-member" onclick="redirectToPage('teampage.html')">
+                <img src="team_member7.jpg" alt="Informatics">
+                <h3>Informatics</h3>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; X SBE - Semana da Bioengenharia</p>
+    </footer>
+
+    <script>
+        function updateCountdown() {
+            const eventDate = new Date("February 5, 2025 09:00:00").getTime();
+            const now = new Date().getTime();
+            const timeLeft = eventDate - now;
+
+            const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+            document.getElementById("days").textContent = days;
+            document.getElementById("hours").textContent = hours;
+            document.getElementById("minutes").textContent = minutes;
+            document.getElementById("seconds").textContent = seconds;
+        }
+
+        setInterval(updateCountdown, 1000);
+    </script>
+</body>
+</html>
