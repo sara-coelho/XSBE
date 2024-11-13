@@ -6,8 +6,11 @@
     font-style: normal;
 }
 
-.fundo-roxo{
-    background-color: #8E73B2;
+.fundo-colorido {
+    background-image: url('../images/background.jpg');
+    background-size: cover; /* Ensures the image covers the whole element */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
     padding: 2rem;
 }
 
