@@ -16,7 +16,7 @@ session_start();
 <html>
     <head>
         <title>Job2Be - Semana da Biomédica</title>
-        <link rel="icon" type="image/x-icon" href="assets/images/logocolorido.png">
+        <link rel="icon" type="image/x-icon" href="assets/images/icon.png">
         <meta charset="UTF-8">
         <script src="https://unpkg.com/html5-qrcode" type="text/javascript"></script>
     </head>
