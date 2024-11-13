@@ -19,7 +19,7 @@
     text-justify: inter-word;
     color: #fff;
     font-family: 'Jaapokki Subtract';
-    font-size: 1rem;
+    font-size: 100px;
     font-weight: 200;
 }
 
@@ -27,36 +27,115 @@
     color: #fff;
     font-family: 'Jaapokki Subtract';
     font-weight: bolder;
-    font-size: 3rem;
+    font-size: 150px;
     letter-spacing: 2px;
-}
-
-.titulo-roxo{
-    color: #3F165B;
-    font-family: 'Jaapokki Subtract';
-    font-weight: bolder;
-    font-size: 3rem;
-    letter-spacing: 2px;
-}
-
-h2.titulo-roxo{
-    font-size: 1.5rem ;
 }
 
 h2.titulo-branco{
-    font-size: 1.5rem ;
+    font-size: 125px ;
 }
-h3.titulo-roxo{
-    font-size: 1.2rem ;
+
+.titulo-castanho{
+    color: #A85100;
+    font-family: 'Jaapokki Subtract';
+    font-weight: bolder;
+    font-size: 150px;
+    letter-spacing: 2px;
+}
+
+h2.titulo-castanho{
+    font-size: 125px ;
+}
+
+h3.titulo-castanho{
+    font-size: 110px ;
 }
 
 
-.texto-roxo{
+.texto-castanho{
     text-align: justify;
     text-justify: inter-word;
-    color: #3F165B;
+    color: #A85100;
     font-family: 'Jaapokki Subtract';
-    font-size: 1rem;
+    font-size: 100px;
+    font-weight: 400;
+}
+
+.titulo-verde{
+    color: #3E5F04;
+    font-family: 'Jaapokki Subtract';
+    font-weight: bolder;
+    font-size: 150px;
+    letter-spacing: 2px;
+}
+
+h2.titulo-verde{
+    font-size: 125px ;
+}
+
+h3.titulo-verde{
+    font-size: 110px ;
+}
+
+
+.texto-verde{
+    text-align: justify;
+    text-justify: inter-word;
+    color: #3E5F04;
+    font-family: 'Jaapokki Subtract';
+    font-size: 100px;
+    font-weight: 400;
+}
+
+.titulo-amarelo{
+    color: #D1B201;
+    font-family: 'Jaapokki Subtract';
+    font-weight: bolder;
+    font-size: 150px;
+    letter-spacing: 2px;
+}
+
+h2.titulo-amarelo{
+    font-size: 125px ;
+}
+
+h3.titulo-amarelo{
+    font-size: 110px ;
+}
+
+
+.texto-amarelo{
+    text-align: justify;
+    text-justify: inter-word;
+    color: #D1B201;
+    font-family: 'Jaapokki Subtract';
+    font-size: 100px;
+    font-weight: 400;
+}
+
+.titulo-azul{
+    color: #055B61;
+    font-family: 'Jaapokki Subtract';
+    font-weight: bolder;
+    font-size: 150px;
+    letter-spacing: 2px;
+}
+
+h2.titulo-azul{
+    font-size: 125px ;
+}
+
+h3.titulo-azul{
+    font-size: 110px ;
+}
+
+
+.texto-azul{
+    text-align: justify;
+    text-justify: inter-word;
+    color: #055B61;
+    font-family: 'Jaapokki Subtract';
+    font-size: 100px;
     font-weight: 400;
 }
 
@@ -74,7 +153,7 @@ h3.titulo-roxo{
 }
 
 .pontos-botao{
-    background-color: #3F165B;
+    background-color: #FF8418;
     color: #FFFFFF;
     border-radius: 15px;
     border: none;
